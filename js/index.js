@@ -15,9 +15,8 @@ const fruitNames = ["Grapes", "Melon", "Watermelon", "Tangerine", "Lemon", "Bana
 const fruits = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
 
 
-// SORTING FRUIT USING MAP FUNTION
+// SORTING FRUIT USING MAP FUNTION BY CREATING A NEW COMBINED ARRAY
 var sortFruit = fruitNames.map((fruit, i) => {
-   1
   return fruit + ' ' + fruits[i]
 });
 
