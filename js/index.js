@@ -15,9 +15,9 @@ const fruitNames = ["Grapes", "Melon", "Watermelon", "Tangerine", "Lemon", "Bana
 const fruits = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
 
 
-// SORTING FRUIT USING MAP FUNTION BY CREATING A NEW COMBINED ARRAY
+// SORTING FRUIT USING MAP FUNTION MERGINGING TWO ARRAY TO CREATE ONE ARRAY
 var sortFruit = fruitNames.map((fruit, i) => {
-  1
+   1
   return fruit + ' ' + fruits[i]
 });
 
@@ -49,7 +49,7 @@ const addFruitToList = () => {
 }
 addFruitBtn.addEventListener("click", addFruitToList)
 
-// SEARCH FOR A SPECIFIC
+// SEARCH FOR A SPECIFIC FRUIT
 const searchFruit = () => {
 
   let fruitValue = searchItem.value;
