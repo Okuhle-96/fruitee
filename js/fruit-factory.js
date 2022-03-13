@@ -6,6 +6,10 @@ const fruits = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", 
 let allFruits = fruitNames || [];
 let allEmojis = fruits || [];
 
+let sortFruit = fruitNames.map((fruit, i) => {
+   return fruit + ' ' + fruits[i]
+});
+
 const addNewFruit = (fruit) => {
     let newFruitList = [];
     if(fruit){
@@ -24,14 +28,13 @@ const addNewEmoji = (emoji) => {
 
 const setFruitsLocalStorage = (addFruit, addEmoji) => {
     if(addFruit && addEmoji){
-          addFruit = addFruit.charAt(0).toUpperCase() + addFruit.slice(1);
               allFruits.push(addFruit);
               allEmojis.push(addEmoji);
       }
       return;
   }
   
-  const getFruitsLocalStorage = () => {
+  const displayFruitFromLocal = () => {
       let fruitList = []
       for (let i = 0; i < allEmojis.length; i++) {
         const newFruit = allFruits[i];
@@ -44,10 +47,11 @@ const setFruitsLocalStorage = (addFruit, addEmoji) => {
   }
 
   return{
+    sortFruit,
     addNewFruit,
     addNewEmoji,
     setFruitsLocalStorage,
-    getFruitsLocalStorage
+    displayFruitFromLocal
      
   }
 }
